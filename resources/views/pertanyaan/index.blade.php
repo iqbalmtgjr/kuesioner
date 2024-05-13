@@ -9,7 +9,7 @@
             <div class="page-title d-flex flex-column justify-content-center flex-wrap me-3">
                 <!--begin::Title-->
                 <h1 class="page-heading d-flex text-dark fw-bold fs-3 flex-column justify-content-center my-0">
-                    Tahun Ajaran</h1>
+                    Pertanyaan</h1>
                 <!--end::Title-->
             </div>
             <!--end::Page title-->
@@ -94,7 +94,7 @@
                             <!--begin::Add user-->
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#kt_modal_add_user">
-                                <i class="ki-duotone ki-plus fs-2"></i>Tambah Tahun Ajaran</button>
+                                <i class="ki-duotone ki-plus fs-2"></i>Tambah Pertanyaan</button>
                             @include('kategori.modal')
                             <!--end::Add user-->
                         </div>
@@ -122,6 +122,9 @@
                                 <th class="w-10px pe-2">
                                     No
                                 </th>
+                                <th class="min-w-125px">Pertanyaan</th>
+                                <th class="min-w-125px">Kategori</th>
+                                <th class="min-w-125px">Tipe</th>
                                 <th class="min-w-125px">Tahun Ajaran</th>
                                 <th class="text-end min-w-100px">Actions</th>
                             </tr>
@@ -129,6 +132,9 @@
                         <tbody class="text-gray-600 fw-semibold">
                             <tr>
                                 <td>1</td>
+                                <td>Dosen anda mengajar memberikan rasa nyaman ?</td>
+                                <td>Penilaian Dosen</td>
+                                <td>Pilihan Ganda</td>
                                 <td>2023/2024 - Genap</td>
                                 <td class="text-end">
                                     <a href="#"
@@ -156,7 +162,41 @@
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>2024/2025 - Ganjil</td>
+                                <td>Dosen anda sering/ selalu memberikan motivasi yang bagus ?</td>
+                                <td>Penilaian Dosen</td>
+                                <td>Pilihan Ganda</td>
+                                <td>2023/2024 - Genap</td>
+                                <td class="text-end">
+                                    <a href="#"
+                                        class="btn btn-light btn-active-light-primary btn-flex btn-center btn-sm"
+                                        data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
+                                        <i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+                                    <!--begin::Menu-->
+                                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4"
+                                        data-kt-menu="true">
+                                        <!--begin::Menu item-->
+                                        <div class="menu-item px-3">
+                                            <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                class="menu-link px-3">Edit</a>
+                                        </div>
+                                        <!--end::Menu item-->
+                                        <!--begin::Menu item-->
+                                        <div class="menu-item px-3">
+                                            <a href="#" class="menu-link px-3"
+                                                data-kt-users-table-filter="delete_row">Delete</a>
+                                        </div>
+                                        <!--end::Menu item-->
+                                    </div>
+                                    <!--end::Menu-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Dosen anda selalu memberikan gambaran tentang pentingnya mata kuliah dalam dunia kerja ?
+                                </td>
+                                <td>Penilaian Dosen</td>
+                                <td>Pilihan Ganda</td>
+                                <td>2023/2024 - Genap</td>
                                 <td class="text-end">
                                     <a href="#"
                                         class="btn btn-light btn-active-light-primary btn-flex btn-center btn-sm"

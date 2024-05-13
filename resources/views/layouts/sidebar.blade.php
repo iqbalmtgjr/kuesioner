@@ -8,10 +8,10 @@
         <div class="app-sidebar-logo px-6" id="kt_app_sidebar_logo">
             <!--begin::Logo image-->
             <a href="../../demo1/dist/index.html">
-                <h3>SIKU</h3>
-                {{-- <img alt="Logo" src="assets/media/logos/default-dark.svg" class="h-25px app-sidebar-logo-default" />
+                {{-- <h3>SIKU</h3> --}}
+                <img alt="Logo" src="assets/media/logos/default-dark.svg" class="h-25px app-sidebar-logo-default" />
                 <img alt="Logo" src="assets/media/logos/default-small.svg"
-                    class="h-20px app-sidebar-logo-minimize" /> --}}
+                    class="h-20px app-sidebar-logo-minimize" />
             </a>
             <div id="kt_app_sidebar_toggle"
                 class="app-sidebar-toggle btn btn-icon btn-shadow btn-sm btn-color-muted btn-active-color-primary h-30px w-30px position-absolute top-50 start-100 translate-middle rotate"
@@ -53,9 +53,12 @@
                             <a class="menu-link {{ request()->is('kategori') ? 'active' : '' }}"
                                 href="{{ url('kategori') }}">
                                 <span class="menu-icon">
-                                    <i class="ki-duotone ki-rocket fs-2">
+                                    <i class="ki-duotone ki-notepad fs-2">
                                         <span class="path1"></span>
                                         <span class="path2"></span>
+                                        <span class="path3"></span>
+                                        <span class="path4"></span>
+                                        <span class="path5"></span>
                                     </i>
                                 </span>
                                 <span class="menu-title">Kategori</span>
@@ -93,6 +96,23 @@
                                     </i>
                                 </span>
                                 <span class="menu-title">Parameter Nilai</span>
+                            </a>
+                            <!--end:Menu link-->
+                        </div>
+                        <!--end:Menu item-->
+                        <!--begin:Menu item-->
+                        <div class="menu-item">
+                            <!--begin:Menu link-->
+                            <a class="menu-link {{ request()->is('pertanyaan') ? 'active' : '' }}"
+                                href="{{ url('pertanyaan') }}">
+                                <span class="menu-icon">
+                                    <i class="ki-duotone ki-question fs-2">
+                                        <span class="path1"></span>
+                                        <span class="path2"></span>
+                                        <span class="path3"></span>
+                                    </i>
+                                </span>
+                                <span class="menu-title">Pertanyaan</span>
                             </a>
                             <!--end:Menu link-->
                         </div>
